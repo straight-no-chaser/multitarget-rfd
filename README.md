@@ -1,4 +1,4 @@
-# Multi-target Protein Binder Design with Multistate RFdiffusion Guidance
+# Multi-target protein binder design with multistate RFdiffusion guidance
 
 This repository includes a concentrated multistate binder modification for extending **single binder backbone / pose** to geometrically compatible **multiple pre-aligned homologous targets** during RFdiffusion inference.
 
