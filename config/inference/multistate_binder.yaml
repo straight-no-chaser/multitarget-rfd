@@ -1,0 +1,33 @@
+# Config for Phase 1 inference-only multi-state binder guidance.
+
+defaults:
+  - base
+
+multistate:
+  enable: false
+  target_pdbs: []
+  hotspot_res_by_target: []
+  reference_target_idx: 0
+
+  aggregate_mode: softmax_max
+  softmax_temperature: 0.5
+
+  guide_scale: 0.05
+  guide_schedule: mid_peak
+
+  use_pose_consistency: true
+  pose_weight: 0.5
+
+  hotspot_weight: 1.0
+  clash_weight: 2.0
+  contact_weight: 0.5
+
+  contact_cutoff: 8.0
+  clash_cutoff: 2.5
+
+  alignment_check: true
+  centroid_tolerance: 2.0
+  axis_tolerance_deg: 20.0
+
+  grad_clip_norm: 1.0
+  reject_bad_guidance_step: true
